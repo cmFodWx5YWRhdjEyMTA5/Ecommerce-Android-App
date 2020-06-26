@@ -30,7 +30,7 @@ Android App Configuration
 
 **Step 1:-** Select ‘Import Project’ option and find your **“Woobox\_droid" Project**
 
-![](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/tree/master/images/1.png)
+![](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/blob/master/images/1.png)
 
 **Step 2:-** Select your current project then click ok button and wait few minute
 
