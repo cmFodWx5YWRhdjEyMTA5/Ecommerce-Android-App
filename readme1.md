@@ -1,20 +1,16 @@
-[![logo](./WooBox%20-%20Native%20Android%20App%20for%20WooCommerce_files/logo.png) **Woobox**Docs](https://iqonic.design/documentation/Woobox/index.html)
+[**E-shopping App**Docs](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/master/readme1.md)
 =========================================================================================================================================================
 
--   [Home](https://iqonic.design/documentation/Woobox/index.html)
--   [Change Logs](https://iqonic.design/documentation/Woobox/change-log.html)
+-   [Home](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/)
+-
 -   [Try Demo](https://play.google.com/store/apps/details?id=com.iqonic.woobox)
 
-### “ WooBox - Native Android App for WooCommerce”
+### “ E-shopping - Native Android App for E-Commerce”
 
-Created: 17/11/2019
- Updated: 21/02/2020
- By: iQonicthemes
- Email: [design@iqonicthemes.com](mailto:design@iqonicthemes.com)
+Created: 17/05/2029
+ Updated: 26/06/2020
+ Email: [vaibhav.hariramani01@gmail.com](mailto:vaibhav.hariramani01@gmail.com)
 
-We are following CodeCanyon rules and regulation, so under this licenses you can only publish single product on play store. And you can't sell this source code anywhere. Please follow Standard Licenses: [https://codecanyon.net/licenses/standard/](https://codecanyon.net/licenses/standard/)
-
-![](./WooBox%20-%20Native%20Android%20App%20for%20WooCommerce_files/Img1.png)
 
 Basic Installation
 ------------------
@@ -34,7 +30,7 @@ Android App Configuration
 
 **Step 1:-** Select ‘Import Project’ option and find your **“Woobox\_droid" Project**
 
-![HTML Structure](./WooBox%20-%20Native%20Android%20App%20for%20WooCommerce_files/1.png)
+![HTML Structure](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/tree/master/images/1.png)
 
 **Step 2:-** Select your current project then click ok button and wait few minute
 
