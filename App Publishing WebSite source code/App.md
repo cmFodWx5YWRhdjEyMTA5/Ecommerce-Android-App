@@ -1,3 +1,4 @@
+## Our Published App Lauching Website Interface
 [<img src="images/logo.png" width="100">](https://vaibhavhariaramani.github.io/projects/android%20development/Ecommerce%20App/index.html)
 -   **Home**
 -   **Elements**
@@ -5,7 +6,7 @@
 -   **Screenshots**
 -   **Contact**
 
-![image](images/banner/1.png)
+<img src="images/banner/1.png" width="90">
 
 +
 
