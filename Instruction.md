@@ -1,18 +1,4 @@
-[**E-shopping App**Docs](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/master/readme1.md)
-=========================================================================================================================================================
-
--   [Home](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/)
--
--   [Try Demo](https://play.google.com/store/apps/details?id=com.iqonic.woobox)
-
-### “ E-shopping - Native Android App for E-Commerce”
-
-Created: 17/05/2029
- Updated: 26/06/2020
- Email: [vaibhav.hariramani01@gmail.com](mailto:vaibhav.hariramani01@gmail.com)
-
-
-Basic Installation
+Basic Setup & Installation
 ------------------
 
 To develop app you need to set up an Android studio.
