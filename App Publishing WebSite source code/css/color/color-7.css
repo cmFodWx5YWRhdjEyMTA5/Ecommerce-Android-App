@@ -1,0 +1,60 @@
+/*
+
+Qwilo - Multipurpose Responsive HTML5 Template
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+
+: This is color stylesheet of Color Scheme.
+
+*/
+
+/************************* selection *************************/
+*::-moz-selection { background: #fa709a; color: #ffffff; text-shadow: none; }
+::-moz-selection { background: #fa709a; color: #ffffff; text-shadow: none; }
+::selection { background: #fa709a; color: #ffffff; text-shadow: none; }
+a { color: #fa709a; }
+a:focus, a:hover { color: #fa709a; }
+
+/*----------------------------------------------------------------------
+                        Buttons
+-----------------------------------------------------------------------*/
+.button, header .button.brd, .button.brd:hover { background: rgba(250, 112, 154, 1); background: -moz-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(250, 112, 154, 1)), color-stop(100%, rgba(254, 225, 64, 1))); background: -webkit-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: -o-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: -ms-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa709a', endColorstr='#fee140', GradientType=1); border: 2px solid #fa709a; }
+.button:hover { border: 2px solid #fa709a; color: #fa709a; }
+
+/*----------------------------------------------------------------------
+                        Box Shadow
+-----------------------------------------------------------------------*/
+.button, .button.brd, .pricing .nav-pills .nav-link.active, .pricing .nav-pills .show>.nav-link, .coming-soon .shadow-card { webkit-box-shadow: 0px 12px 20px 0px rgb(254, 225, 64, 0.3); -moz-box-shadow: 0px 12px 20px 0px rgba(250, 112, 154, 0.3); box-shadow: 0px 12px 20px 0px rgb(254, 225, 64, 0.3); }
+
+/*---------------------------------------------------------------------
+                           Section Title
+-----------------------------------------------------------------------*/
+.title-box .title:after { background: rgb(250, 112, 154, 0.5); }
+
+/*---------------------------------------------------------------------
+                            Text Color 
+-----------------------------------------------------------------------*/
+header .navbar-light .navbar-nav .nav-item:hover a, header .navbar-light .navbar-nav .nav-item.active a, .about-app .about-box p span, .team .team-box .social-box a:hover i, .faq #accordion .btn-link, .button.brd, .blog-box ul li a, .blog-box .title a:hover, footer .footer-copyright a:hover, .breadcrumbs ul li a, .iq-blogdetailbox .iq-sidebar-widget .iq-widget-search i:hover, .iq-blogdetailbox .iq-sidebar-widget ul.iq-tag li a:hover, .iq-blogdetailbox .iq-comment-list .btn-black.green, .iq-blogdetailbox .iq-sidebar-widget .post-blog a:hover, .iq-blogdetailbox .iq-sidebar-widget .post-blog a:hover, .coming-soon .heading-text { color: #fee140 !important; }
+.blog-box ul li a:hover, footer .footer-copyright a, .iq-blogdetailbox .iq-blogbox .iq-detail-box .special-text i, .coming-soon .btn:hover { color: #fa709a; }
+
+/*------------------------------------------------------------------------
+                          Background Color 
+-------------------------------------------------------------------------*/
+#back-to-top .top, .services .media:before, .team .owl-carousel.owl-theme .owl-dots .owl-dot.active span, .team .owl-carousel.owl-theme .owl-dots .owl-dot:hover span, .iq-blogdetailbox .info-block { background: #fa709a; }
+
+/*---------------------------------------------------------------------
+                       Background Gradient 
+---------------------------------------------------------------------*/
+.banner .iq-phone, .banner .iq-mail, #back-to-top .top:hover, #how-it-works .feature-box .icon-bg, .services .media span, .iq-app .iq-app-info, .faq .icon-bg, .pricing-box.active .icon-bg, .pricing .nav-pills .nav-link.active, .pricing .nav-pills .show>.nav-link, footer .media-box li a:hover, .iq-blogdetailbox .iq-blogbox .iq-blog-entry .iq-entry-tag span, .breadcrumbs .icon-bg, .coming-soon #clock > div, .coming-soon .btn, .coming-soon .media-box li a:hover { background: rgba(250, 112, 154, 1); background: -moz-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(250, 112, 154, 1)), color-stop(100%, rgba(254, 225, 64, 1))); background: -webkit-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: -o-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: -ms-linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); background: linear-gradient(45deg, rgba(250, 112, 154, 1) 0%, rgba(254, 225, 64, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa709a', endColorstr='#fee140', GradientType=1); }
+
+/*---------------------------------------------------------------------
+                           Boder Color 
+---------------------------------------------------------------------*/
+.button.brd, footer .media-box li a:hover, .iq-blogdetailbox .blog-contact .contact-form .section-field input:focus, .blog-contact .contact-form .section-field.textarea textarea:focus, .coming-soon .shadow-card, .coming-soon .btn:hover, .coming-soon .btn { border: 2px solid #fa709a; }
+.pricing-box.active { border: 1px solid #fa709a; }
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot.active span { border: 4px solid #fa709a; }
+.coming-soon .media-box li a:hover { border-color: #fa709a; }
+@media (max-width:992px) {
+  header .navbar-light .navbar-toggler { border-color: #fee140; }
+}

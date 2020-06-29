@@ -1,0 +1,194 @@
+/*
+Qwilo - Multipurpose Responsive HTML5 Template
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+*/
+/*****************
+(  Media Queries  )
+*******************/
+/*---------------------------------------------------------------------
+This Media Queries Only For App Screenshots Section
+-----------------------------------------------------------------------*/
+/*****************
+Start 
+*******************/
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
+.home-screen-slide:before {height: 603px; width: 310px;}
+.slick-slide img {height: 585px;}
+}
+@media only screen and (min-width: 993px) and (max-width: 1600px) {
+.home-screen-slide:before { height: 520px; width: 270px;}
+.slick-slide img {height: 500px;}
+#screenshots .slick-list { margin: 0 50px 0px 14px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+.home-screen-slide:before { height: 600px;  width: 310px; }
+.slick-slide img {height: 580px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.home-screen-slide:before {height: 580px;width: 310px;}
+.slick-slide img {height: 550px;}
+}
+/*****************
+End 
+*******************/
+@media(max-width:1550px) {
+header .navbar-light .navbar-nav .nav-link { font-size: 16px; }
+header .navbar-light .navbar-nav .nav-item { margin: 0 7px; }
+.navbar-expand-lg .navbar-nav .nav-link { padding-right: 14px; padding-left: 0; }
+.title-box .sub-title { padding: 0 80px; }
+}
+@media(max-width:1470px) {
+.iq-blogdetailbox .iq-sidebar-widget .post-img { display: inherit; float: inherit;}
+.iq-blogdetailbox .iq-sidebar-widget .post-blog { display: inherit; margin-top: 15px;}
+}
+@media(max-width:1399px) {
+.container-fluid { padding: 0 100px; }
+header .navbar-light .navbar-nav .nav-link, header .button.brd { font-size: 14px; }
+.navbar-expand-lg .navbar-nav .nav-link { padding-right: 10px; }
+.faq #accordion .btn-link { background: #fff; }
+.faq .card { background: inherit; }
+.breadcrumbs .icon-bg { right: 40px;}
+.about-app .about-after { width: 50%;}
+.faq .icon-bg {width: 630px; height: 630px;}
+}
+@media(max-width:1199px) {
+.navbar-expand-lg .navbar-nav .nav-link { padding-right: 6px; }
+header .container-fluid { padding: 0 50px; }
+.title-box .sub-title { padding: 0 30px; }
+.about-app .about-box .title { font-size: 45px; line-height: 55px; }
+.about-app .about-box .title { font-size: 42px; line-height: 52px;}
+.faq .icon-bg {width: 500px; height: 500px;}
+.iq-app-info { padding: 30px 15% 0% 30px;}
+}
+@media (max-width:768px) { 
+.banner .banner-text h1 { font-size: 46px;}	
+}
+@media(max-width:992px) {
+header.menu-sticky .navbar-light .navbar-toggler { border-color: rgb(103, 135, 249); }
+.navbar-toggler-icon i { font-size: 30px; color: #ffffff; }
+.navbar-light .navbar-toggler { border-color: rgba(255, 255, 255, .5); }
+.navbar-collapse ul {background: #ffffff; color: #000000; display: inline-block; width: 100%; border: 1px solid #dddddd; padding: 10px;}
+header.sticky_header .button-bdr { float: left; margin-top: 15px; margin-left: 15px; }
+.header.sticky_header .navbar.navbar-expand-lg.navbar-light .navbar-toggler-icon i { color: #ffffff; }
+.feature-box { margin-top: 20px; }
+#features img { display: none; }
+#features .media { text-align: left !important; }
+.about-app { margin-top: 0; }
+.about-app img { width: 50%; }
+.banner .banner-text h1 { font-size: 40px; }
+.services { margin-top: 0px; }
+.iq-app { margin-top: 0px; }
+.home-screen-slide { margin-left: 0px; }
+.iq-app-info { padding: 30px 15% 0% 50px; }
+.faq img { width: 60%; }
+.pricing .tab-content { margin-top: 50px; }
+.pricing .title-box { margin-bottom: 80px; }
+.blog { margin-top: 0; }
+.title-box .sub-title { padding: 0; }
+.blog-box.left { margin-left: 0; margin-top: 30px; }
+.title-box { margin-bottom: 70px; }
+.testimonial-box .description { font-size: 16px; line-height: 28px; }
+.testimonials { margin-top: 0; }
+#how-it-works { margin-top: 0; }
+.faq .title-box { margin-bottom: 40px; margin-top: 50px; }
+.pricing { margin-top: 0px; }
+.iq-app { margin-top: 0px; }
+header .button.brd { position: absolute; right: 100px; top: -67px; }
+header .navbar-light .navbar-collapse {position: absolute; top: 87px; width: 100%; }
+header .navbar-light .navbar-toggler { border-color: #815ded; }
+.banner-phone{display: none;}
+.banner { padding-bottom: 30px;}
+.about-app .about-after {right: 50%; bottom: 10%; margin-right: -25%; top: inherit;}
+.iq-app-info { padding: 0 30px;}
+.faq .icon-bg { width: 500px; height: 500px; left: 50%; margin-left: -25%;top: 10%;}
+.faq .col-lg-6.col-md-12{text-align: center;}
+.faq .icon-bg{display: none;}
+.pricing-box .icon-bg, .pricing-box.active .icon-bg { width: 800px; height: 350px;}
+.pricing-box{margin-top: 30px;}
+footer .title-box.left, form { padding-right: 0;}
+footer .contact {width: 100%;}
+.download img{margin-top: 60px;}
+footer .footer-map{margin-top: 60px;}
+.iq-blogdetailbox .iq-sidebar-widget .iq-post li { display: inherit; border: none;}
+.iq-blogdetailbox .iq-sidebar-widget .post-img { display: table; float: left;}
+.iq-blogdetailbox .iq-sidebar-widget .post-blog { display: table-cell; margin-top: 0;}
+header.menu-sticky .button.brd {margin-top: 10px;}
+.coming-soon .form-email .btn-color{margin-top: 15px;}
+}
+@media(max-width:767px) { 
+.breadcrumbs .icon-bg{display: none;}
+header .button.brd{display: none; }
+.breadcrumbs { padding: 150px 0 0 0;}
+.breadcrumbs ul { text-align: center;}
+.title-box .title {font-size: 30px; line-height: 40px;}
+.title-box .sub-title { font-size: 14px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(3) span{left: 0; width: 60px; height: 60px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(6) span{right: 0;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(9) span { right: 0; bottom: inherit; top: -80px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(5) span{bottom: 0;}
+.testimonial-box .description { font-size: 14px; line-height: 24px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(1) span {width: 60px; height: 60px; top: -100px;}
+.testimonial-box { text-align: center; padding: 0;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(8) span {right: -12%; top: -30px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(7) span { width: 70px; height: 70px;right: -20%;}
+.button{font-size: 14px;}
+.download .button { padding: 6px 20px;}
+footer .footer-map { border-radius: 0; height: 300px;}
+footer .contact ul li { margin: 10px 20px 10px 0; font-size: 16px;}
+footer .contact { margin: 40px 0 20px 0;}
+footer .footer-copyright { font-size: 14px; margin-top: 30px;}
+footer{padding-top: 40px; margin-top: 0;}
+footer:before{display: none;}
+.coming-soon .form-email .input-form-mail { width: 100%;  border-radius: 100px; text-align: center;}
+.coming-soon .input-group-btn { display: inherit; float: inherit; position: inherit; top: 0;}
+.coming-soon h2 { font-size: 36px;font-weight: bold;}
+.coming-soon .form-email { position: relative; max-width: 700px; margin: auto; top: 30px;}
+.coming-soon .container.coming-page{padding-top: 0;}
+.iq-blogdetailbox .iq-comment-list .btn-black.green { margin: 10px 0 0 0; right: inherit; top: inherit; position: inherit; padding: 0;
+display: inline-block;}
+.iq-blogdetailbox .iq-blogbox .iq-entry-title h5 {font-size: 20px; line-height: 30px;}
+.iq-blogdetailbox .iq-blogbox .iq-detail-box .special-text p { font-size: 16px; line-height: 26px;}
+}
+@media(max-width:575px) {
+header .container-fluid, .container-fluid { padding: 0 30px;}
+header .navbar{padding: 0;}
+.banner-text .iq-phone, .banner-text .iq-mail{display: none;}
+header .navbar-light .navbar-collapse { top: 71px;}
+.services .media span { width: 60px; height: 60px; line-height: 60px; font-size: 30px;}
+.services .media p {font-size: 14px;}
+.services .media .title { font-size: 20px;}
+.title-box .title {font-size: 24px; line-height: 40px;}
+.about-app .about-box .title { font-size: 30px; line-height: 40px;}
+.testimonial-box { padding: 0;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(6) span {right: 0; bottom: 20px; width: 60px; height: 60px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(3) span { bottom: -62px;}
+.blog-box.left .media-body h5 { font-size: 16px;}
+.blog-box ul li { display: inline-block; border-right: 0; padding-right: 0; margin-right: 0;}
+.blog-box.left .img-box .media-body .content .mt-2{ margin-top: 0 !important;}
+.coming-soon h2 { font-size: 24px; font-weight: bold;}
+.coming-page p{font-size: 14px;}
+.coming-soon .container.coming-page {padding-right: 0; padding-left: 0;}
+.iq-blogdetailbox .info-block, .iq-blogdetailbox .iq-comments-media{ display: -ms-flexbox; display: inherit; -ms-flex-align: inherit;align-items: inherit;}
+.iq-blogdetailbox .info-block img,  .iq-blogdetailbox .iq-comments-media img {margin-bottom: 10px;}
+.breadcrumbs ul li { font-size: 18px;}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(7) span {
+ 
+    right: -35px;
+}
+.testimonials .owl-carousel.owl-theme .owl-dots .owl-dot:nth-child(8) span {
+    right: -20px;
+   
+}
+
+
+}
+@media(max-width:479px) {
+.banner .banner-text h1 {font-size: 30px;}
+.about-app .about-box .title { font-size: 30px; line-height: 40px;}
+.iq-blogdetailbox .iq-sidebar-widget .post-img { display: inherit; float: inherit;}
+.iq-blogdetailbox .iq-sidebar-widget .post-blog { display: inherit; margin-top: 15px;}
+.faq #accordion .btn-link {
+    font-size: 16px;}
+}
