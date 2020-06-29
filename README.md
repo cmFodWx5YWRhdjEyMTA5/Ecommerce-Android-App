@@ -8,7 +8,7 @@ Source Code of Ecommerce Android App with Admin Panel
 
 ### “ E-shopping - Native Android App for E-Commerce”
 
-Created: 17/05/2029
+Created: 17/05/2020
  Updated: 26/06/2020
  Email: [vaibhav.hariramani01@gmail.com](mailto:vaibhav.hariramani01@gmail.com)
 
