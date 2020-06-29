@@ -18,7 +18,7 @@ Vaibhav's Ecommerce App lets you to transform your eCommerce Business into a uni
 
 [Download](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/raw/master/Ecommerce%20app.apk)
 
-<img src="images/about-us/main.png" width="150">
+<img src="images/about-us/main.png" width="450">
 
 Build Your Own Ecommerce-Android-App
 
