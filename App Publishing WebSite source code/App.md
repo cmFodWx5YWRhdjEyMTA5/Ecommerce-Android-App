@@ -44,7 +44,6 @@ Ecommerce Shopping App supports the latest release Android 10. There’s a lot n
 
 +
 
-![image](images/about-us/backimg.png)
 
 **Create Your own Amazing App**
 -------------------------------
@@ -53,7 +52,7 @@ Grow your business multi-folds by launching an eCommerce app using [Source Code 
 
 This Ecommerce App is an ultimate app for developers or shop owners to build any kind of eCommerce app they need.
 
-![image](images/about-us/about-phone.png)
+<img src="images/about-us/about-phone.png" width="450">
 
 +
 
@@ -79,7 +78,7 @@ Smooth payment processing gateway for your app.
 
 **
 
-![image](images/about-us/features-img1.png)
+<img src="images/about-us/features-img1.png" width="450">
 
 **
 
@@ -118,25 +117,7 @@ The powerful set of app screens
 Extremely easy to customize
 ---------------------------
 
-[![\#](images/screenshots/1.png)](images/screenshots/1.png)
-
-[![\#](images/screenshots/2.png)](images/screenshots/2.png)
-
-[![\#](images/screenshots/3.png)](images/screenshots/3.png)
-
-[![\#](images/screenshots/4.png)](images/screenshots/4.png)
-
-[![\#](images/screenshots/5.png)](images/screenshots/5.png)
-
-[![\#](images/screenshots/6.png)](images/screenshots/6.png)
-
-[![\#](images/screenshots/7.png)](images/screenshots/7.png)
-
-[![\#](images/screenshots/8.png)](images/screenshots/8.png)
-
-[![\#](images/screenshots/9.png)](images/screenshots/9.png)
-
-[![\#](images/screenshots/10.png)](images/screenshots/10.png)
+<img src="images/screenshots/1.png" width="350"> <img src="images/screenshots/2.png" width="350"> <img src="images/screenshots/3.png" width="350"> <img src="images/screenshots/4.png" width="350"> <img src="images/screenshots/5.png" width="350"> <img src="images/screenshots/6.png" width="350"> <img src="images/screenshots/7.png" width="350"> <img src="images/screenshots/8.png" width="350"> <img src="images/screenshots/9.png" width="350"> <img src="images/screenshots/10.png" width="350">
 
 Download the App
 
@@ -147,9 +128,7 @@ Vaibhav's Ecommerce App will get all your online shopping app requirement covere
 
 ![image](images/download/download.png)
 
-Rate & Review
 
-![image](images/thank-you-ratting.png)
 
 +
 
@@ -159,15 +138,34 @@ Thank you for checking us out. You can get in touch with us for any questions, q
 
 [Submit Now](#)
 
--   Mail:vaibhav.hariramani01@gmail.com
+-   [Mail:vaibhav.hariramani01@gmail.com](mailto:vaibhav.hariramani01@gmail.com)
 
--   [**](https://twitter.com/vaibhavhariram2)
--   [**](https://www.facebook.com/jayesh.hariramani.3)
--   [**](https://sites.google.com/view/geeky-traveller/home)
--   [**](https://github.com/vaibhavhariaramani)
+### Made with ❤️by Vaibhav Hariramani
+#### About me
 
-style="border:0" allowfullscreen\>
+I am an Actions on Google, Internet of things, Alexa Skills, and Image processing developer.
+I have a keen interest in Image processing and Andriod development.
+I am Currently studying at  Chandigarh University, Punjab.
+
+You can find me at:-
+[Linkedin](https://www.linkedin.com/in/vaibhav-hariramani-087488186/) or [Github](https://github.com/vaibhavhariaramani) .
+
+Happy coding ❤️ .
+
+
+
+### Contact Us
+* [LinkedIn](https://www.linkedin.com/in/vaibhav-hariramani-087488186/) 
+* [Email](vaibhav.hariramani01@gmail.com)
+* [Twitter](https://twitter.com/vaibhavhariram2)
+
+-   [**Follow us on Twitter**](https://twitter.com/vaibhavhariram2)
+-   [**Follow us on Facebook**](https://www.facebook.com/jayesh.hariramani.3)
+-   [**Our Website**](https://sites.google.com/view/geeky-traveller/home)
+-   [**Github Profile**](https://github.com/vaibhavhariaramani)
+
+
 
 © Copyright 2019 App Developed by [VaibhavHariramani](https://vaibhavhariaramani.github.io/).
 
-[**](#top)
+
