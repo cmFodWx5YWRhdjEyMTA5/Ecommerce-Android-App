@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title> WooBox - Kotlin WooCommerce App + WordPress Admin panel </title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;WooBox - Kotlin WooCommerce App + WordPress Admin panel&rdquo; Documentation by &ldquo;iQonicthemes&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;WooBox - Kotlin WooCommerce App + WordPress Admin panel&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 17/11/2019<br>
+					By: iQonicthemes<br>
+					Email: <a href="mailto:design@iqonicthemes.com">design@iqonicthemes.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my Application. If you have any questions that are beyond the scope of this help file, please send me email <a href="mailto:design@iqonicthemes.com">design@iqonicthemes.com</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#howtoimport">Open project in Android studio</a></li>
+			<li><a href="#howtochangeappid">How to change ApplicationID and Package name</a></li>
+			<li><a href="#changeicon">How to change Application menu icon, background and app icon</a></li>
+			<li><a href="#appnamechange">How to change Application name</a></li>
+			<li><a href="#font">How to change app Font </a></li>
+			<li><a href="#color">How to change color </a></li>
+			<li><a href="#facebookID">How to Change Admob ID</a></li>
+			<li><a href="#changeServerURL">How to change server URL</a></li>
+			<li><a href="#changeTokenURL">How to change Token</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="howtoimport"><strong>A) Open project in Android studio</strong> - <a href="#toc">top</a></h3>
+		
+		<p><b>Step 1:-</b>  Select ‘Import Project’ option and find your <b>“Woobox_droid" Project</b></p>
+				
+		<img src="assets/images/1.png" alt="HTML Structure" />
+		<p></p>
+		<p> <b>Step 2:-</b> Select your current project then click ok button and wait few minute</p>
+		<p></p>
+		<img src="assets/images/2.png" alt="HTML Structure" />
+		<p></p>
+		<h3 id="howtochangeappid"><strong>B) How to change ApplicationID and Package name</strong> - <a href="#toc">top</a></h3>
+		- Find build.gradle file inside app folder and click to open and change your <b>applicationId</b>
+		<p></p>
+		<img src="assets/images/3.png" alt="howtochangeappid" width="100%" />
+		<p></p>
+		<h3 id="changeicon"><strong>C) How to change Application menu icon, background and app icon</strong> - <a href="#toc">top</a></h3>
+		<p>- Open res folder inside open <b>all drawable folder</b> and <b>all mipmap folder</b> and replace your background images and icons here.</p>
+		<p></p>
+		<img src="assets/images/4.png" alt="HTML Structure" width="100%"/>
+		<p></p>
+		
+		<h3 id="appnamechange"><strong>D) How to change Application name </strong> - <a href="#toc">top</a></h3>
+		
+		<p>- Open app gradle file and change your <b>'app_name'</b> here</p>
+		
+		<img src="assets/images/5.png" alt="HTML Structure" width="100%"/>
+
+		<p></p>
+		
+		<h3 id="font"><strong>E) How to change app Font </strong> - <a href="#toc">top</a></h3>
+		
+		<p> - Click and open font folder and change ttf file</p>
+		
+		<img src="assets/images/6.png" alt="HTML Structure" width="100%"/>
+
+		<p> - Open String.xml file and change font string value</p>
+		
+		<img src="assets/images/11.png" alt="HTML Structure" width="100%"/>
+
+		<p></p>
+
+		<h3 id="color"><strong>F) How to change app color </strong> - <a href="#toc">top</a></h3>
+		
+		<p> - Open color.xml file and change colors</p>
+		
+		<img src="assets/images/7.png" alt="HTML Structure" width="100%"/>
+		<p></p>
+	
+		<h3 id="facebookID"><strong>G) How to Change Admob ID</strong> - <a href="#toc">top</a></h3>
+		
+		<p> - Open string.xml file and change admob_app_id and ad_mob_banner_id  String value</p>
+		
+		<img src="assets/images/8.png" alt="HTML Structure" width="100%"/>
+		<p></p>
+
+
+
+		<h3 id="changeServerURL"><strong>H) How to change server URL</strong> - <a href="#toc">top</a></h3>
+		
+		<p> - Open native-lib.cpp file</p>
+		
+		<img src="assets/images/10.png" alt="HTML Structure" width="100%"/>
+
+		<h3 id="changeTokenURL"><strong>I) How to change Token</strong> - <a href="#toc">top</a></h3>
+		
+		<p> - Open Constants file from utils package and change consumerKey, consumerSecret, token and tokenSecret</p>
+		
+		<img src="assets/images/12.png" alt="HTML Structure" width="100%"/>
+	
+	
+		<p>Once again, thank you so much for purchasing this <b>"WooBox - Kotlin WooCommerce App + WordPress Admin panel"</b> application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this application. Contact in email <a href="mailto:design@iqonicthemes.com">design@iqonicthemes.com</a> I'll do my best to assist. </p> 
+	
+		<p class="append-bottom alt large"><strong>iQonicthemes</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
