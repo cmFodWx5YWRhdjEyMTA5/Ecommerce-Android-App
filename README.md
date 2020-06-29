@@ -4,7 +4,7 @@ Source Code of Ecommerce Android App with Admin Panel
 [**E-shopping App**Docs](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/master/README.md)
 =========================================================================================================================================================
 
- ![](./images/MyPost.png =100x20)
+ <img src="https://github.com/vaibhavhariaramani/Ecommerce-Android-App/blob/master/images/MyPost.png" alt="drawing" width="200"/>
 -   [Home](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/)
 -   [Download App](https://github.com/vaibhavhariaramani/Ecommerce-Android-App/raw/master/Ecommerce%20app.apk)
 
