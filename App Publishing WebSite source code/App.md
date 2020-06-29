@@ -126,7 +126,7 @@ Vaibhav's Ecommerce App will get all your online shopping app requirement covere
 [**
  Get the app now!](#)
 
-![image](images/download/download.png)
+<img src="images/download/download.png" width="450">
 
 
 
