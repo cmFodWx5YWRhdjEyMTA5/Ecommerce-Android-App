@@ -8,8 +8,8 @@ Thank you all for Downloading this Application Source Code. If you have any ques
 
 
 ## Table of Contents 
-1. [Open project in Android studio](#howtoimport) 
-2. [How to change ApplicationID and Package name](#howtochangeappid) 
+A. [Open project in Android studio]
+B. [How to change ApplicationID and Package name](Documentation.md#howtochangeappid) 
 3. [How to change Application menu icon, background and app icon](#changeicon) 
 4. [How to change Application name](#appnamechange) 
 5. [How to change app Font](#font) 
@@ -22,6 +22,7 @@ Thank you all for Downloading this Application Source Code. If you have any ques
 ![HTML Structure](assets/images/1.png) 
 
 **Step 2:-** Select your current project then click ok button and wait few minute 
+
 ![HTML Structure](assets/images/2.png) 
 
 ### **B) How to change ApplicationID and Package name** - [top](#toc) - 
