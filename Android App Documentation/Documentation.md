@@ -25,38 +25,38 @@ Thank you all for Downloading this Application Source Code. If you have any ques
 
 ![HTML Structure](assets/images/2.png) 
 
-### **B) How to change ApplicationID and Package name** - [top](#toc) - 
+### **B) How to change ApplicationID and Package name** 
 Find build.gradle file inside app folder and click to open and change your **applicationId**
 ![howtochangeappid](assets/images/3.png) 
 
-### **C) How to change Application menu icon, background and app icon** - [top](#toc) -
+### **C) How to change Application menu icon, background and app icon** 
 Open res folder inside open **all drawable folder** and **all mipmap folder** and replace your background images and icons here. 
 ![HTML Structure](assets/images/4.png) 
 
-### **D) How to change Application name** - [top](#toc) - 
+### **D) How to change Application name**  
 Open app gradle file and change your **'app_name'** here 
 ![HTML Structure](assets/images/5.png) 
 
-### **E) How to change app Font** - [top](#toc) - 
+### **E) How to change app Font**  
 Click and open font folder and change ttf file 
 ![HTML Structure](assets/images/6.png) 
 
 Open String.xml file and change font string value 
 ![HTML Structure](assets/images/11.png) 
 
-### **F) How to change app color** - [top](#toc) - 
+### **F) How to change app color**  
 Open color.xml file and change colors 
 ![HTML Structure](assets/images/7.png) 
 
-### **G) How to Change Admob ID** - [top](#toc) - 
+### **G) How to Change Admob ID** 
 Open string.xml file and change admob_app_id and ad_mob_banner_id String value 
 ![HTML Structure](assets/images/8.png) 
 
-### **H) How to change server URL** - [top](#toc) - 
+### **H) How to change server URL**  
 Open native-lib.cpp file 
 ![HTML Structure](assets/images/10.png) 
 
-### **I) How to change Token** - [top](#toc) - 
+### **I) How to change Token** 
 Open Constants file from utils package and change consumerKey, consumerSecret, token and tokenSecret 
 ![HTML Structure](assets/images/12.png) 
 
@@ -64,4 +64,4 @@ Open Constants file from utils package and change consumerKey, consumerSecret, t
 Once again, thank you so much for Downloading this **"Vaibhav's E-Commerce App with WordPress Admin panel Source Code"** application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this application. Contact in email [vaibhav.hariramani01@gmail.com](mailto:vaibhav.hariramani01@gmail.com) I'll do my best to assist. 
 
 ## Copyright
-**GeekyBawa** [Go To Table of Contents](#toc) 
+**GeekyBawa** 
