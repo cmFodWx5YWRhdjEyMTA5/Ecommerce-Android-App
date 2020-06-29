@@ -8,15 +8,15 @@ Thank you all for Downloading this Application Source Code. If you have any ques
 
 
 ## Table of Contents 
-A. [Open project in Android studio]
-B. [How to change ApplicationID and Package name](Documentation.md#howtochangeappid) 
-3. [How to change Application menu icon, background and app icon](#changeicon) 
-4. [How to change Application name](#appnamechange) 
-5. [How to change app Font](#font) 
-6. [How to change color](#color) 
-7. [How to Change Admob ID](#facebookID) 
-8. [How to change server URL](#changeServerURL) 
-9. [How to change Token](#changeTokenURL) 
+1. [Open project in Android studio]
+2. [How to change ApplicationID and Package name]
+3. [How to change Application menu icon, background and app icon]
+4. [How to change Application name] 
+5. [How to change app Font]
+6. [How to change color] 
+7. [How to Change Admob ID] 
+8. [How to change server URL] 
+9. [How to change Token] 
 ### **A) Open project in Android studio** - [top](#toc) 
 **Step 1:-** Select ‘Import Project’ option and find your **Ecommerce-Android-App*“" Project** 
 ![HTML Structure](assets/images/1.png) 
