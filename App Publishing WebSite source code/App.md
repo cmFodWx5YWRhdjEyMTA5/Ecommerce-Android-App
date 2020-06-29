@@ -1,15 +1,13 @@
-![loder](images/loader.gif)
+[<img src=images/loader.gif width="100">](https://vaibhavhariaramani.github.io/projects/android%20development/Ecommerce%20App/index.html)
 
-[![image](images/logo.png)](#)
+[img src="images/logo.png" width="80">](https://vaibhavhariaramani.github.io/projects/android%20development/Ecommerce%20App/index.html)
+-   **Home**
+-   **Elements**
+-   **Features**
+-   **Screenshots**
+-   **Contact**
 
--   [Home](#banner)
--   [Elements](#how-it-works)
--   [Features](#features)
--   [Screenshots](#screenshots)
--   [FAQ](#faq)
--   [Contact](#contact)
-
-![image](images/banner/1.png)
+<img src="/banner/1.png" width="100">
 
 +
 
