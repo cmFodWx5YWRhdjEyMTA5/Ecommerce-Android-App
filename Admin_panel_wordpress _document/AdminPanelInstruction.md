@@ -206,4 +206,17 @@ Visit The Link To Obtain Your Key.[Razor Pay](https://razorpay.com/docs/payment-
 
 After Finish Editing Click On Save Changes.
 
-Designed and built with love by [Iqonic Design](http://iqonic.design)
+### Made with ❤️by Vaibhav Hariramani
+#### About me
+
+I am an Actions on Google, Internet of things, Alexa Skills, and Image processing developer.
+I have a keen interest in Image processing and Andriod development.
+I am Currently studying at  Chandigarh University, Punjab.
+
+[My PortFolio](https://vaibhavhariaramani.github.io/)
+You can find me at:-
+[Linkedin](https://www.linkedin.com/in/vaibhav-hariramani-087488186/) or [Github](https://github.com/vaibhavhariaramani) .
+
+Happy coding ❤️ .
+
+Designed and built with love by [Vaibhav Hariramani](https://vaibhavhariaramani.github.io/)
