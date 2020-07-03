@@ -4,12 +4,12 @@
 USER GUIDE
 ==========
 
-On behalf of iqonicdesign team, we would like to thank you for purchasing this item. Your support encourages us to build better items and continuously bring value to our products. This documentation file covers all the information needed to install and use this Template. You'll find everything you need to know to create a stunning and beautiful website in minutes.
+This documentation file covers all the information needed to install and use this Template. You'll find everything you need to know to create a stunning and beautiful admin panel website in minutes.
 
--   Created: 25 Nov 2019
--   By: iqonic design
--   Email: [design@iqonicthemes.com](mailto:design@iqonicthemes.com)
--   HelpDesk: [https://iqonic.design/contact](https://iqonic.design/contact/)
+-   Created: 25 Jun 2020
+-   By: Vaibhav's Development
+-   Email: [vaibhav.hariramani01@gmail.com](mailto:vaibhav.hariramani01@gmail.com)
+-   HelpDesk: [https://vaibhavhariaramani.github.io/](https://vaibhavhariaramani.github.io/projects/android%20development/Ecommerce%20App/index.html)
 
 Basic Installation
 ------------------
