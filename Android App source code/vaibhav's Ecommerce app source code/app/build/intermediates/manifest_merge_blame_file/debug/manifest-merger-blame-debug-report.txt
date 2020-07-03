@@ -1,0 +1,868 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vishal.store"
+4    android:versionCode="13"
+5    android:versionName="5.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:5:5-79
+11-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:7:5-81
+13-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:8:5-79
+14-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:9:5-81
+15-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:10:5-80
+16-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:10:22-77
+17
+18    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+19    <permission
+19-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:7:5-9:47
+20        android:name="com.vishal.store.permission.C2D_MESSAGE"
+20-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:8:9-63
+21        android:protectionLevel="signature" />
+21-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:9:9-44
+22
+23    <uses-permission android:name="com.vishal.store.permission.C2D_MESSAGE" />
+23-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:11:5-79
+23-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:11:22-76
+24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+24-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:17:5-82
+24-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:17:22-79
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:18:5-68
+25-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:18:22-65
+26    <!--
+27 Required so the device vibrates on receiving a push notification.
+28         Vibration settings of the device still apply.
+29    -->
+30    <uses-permission android:name="android.permission.VIBRATE" />
+30-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:23:5-66
+30-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:23:22-63
+31    <!--
+32 Use to restore notifications the user hasn't interacted with.
+33         They could be missed notifications if the user reboots their device if this isn't in place.
+34    -->
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+35-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:29:5-81
+35-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:29:22-78
+36    <!-- Samsung -->
+37    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+37-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:31:5-86
+37-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:31:22-83
+38    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+38-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:32:5-87
+38-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:32:22-84
+39    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+39-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:33:5-81
+39-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:33:22-78
+40    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+40-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:34:5-83
+40-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:34:22-80
+41    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+41-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:35:5-88
+41-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:35:22-85
+42    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+42-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:36:5-92
+42-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:36:22-89
+43    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+43-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:37:5-84
+43-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:37:22-81
+44    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+44-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:38:5-83
+44-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:38:22-80
+45    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+45-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:39:5-91
+45-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:39:22-88
+46    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+46-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:40:5-92
+46-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:40:22-89
+47    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+47-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:41:5-93
+47-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:41:22-90
+48    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+48-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:42:5-73
+48-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:42:22-70
+49    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+49-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:43:5-82
+49-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:43:22-79
+50    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+50-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:44:5-83
+50-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:44:22-80
+51    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+51-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:45:5-88
+51-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:45:22-85
+52    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+52-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:46:5-89
+52-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:46:22-86
+53    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+53-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+53-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+54
+55    <application
+55-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:12:5-170:19
+56        android:name="com.vishal.store.WooBoxApp"
+56-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:13:9-50
+57        android:allowBackup="true"
+57-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:14:9-35
+58        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+58-->[androidx.core:core:1.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/837041862ef49626636022051b7cb2db/core-1.1.0/AndroidManifest.xml:24:18-86
+59        android:debuggable="true"
+60        android:fullBackupContent="true"
+60-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:15:9-41
+61        android:icon="@mipmap/ic_launcher"
+61-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:16:9-43
+62        android:label="@string/app_name"
+62-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:17:9-41
+63        android:roundIcon="@mipmap/ic_launcher_round"
+63-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:18:9-54
+64        android:supportsRtl="true"
+64-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:19:9-35
+65        android:theme="@style/AppTheme"
+65-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:20:9-40
+66        android:usesCleartextTraffic="true" >
+66-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:21:9-44
+67        <activity
+67-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:22:9-23:51
+68            android:name="com.vishal.store.activity.BlogDetailActivity"
+68-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:22:19-78
+69            android:screenOrientation="portrait" />
+69-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:23:13-49
+70        <activity
+70-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:24:9-25:51
+71            android:name="com.vishal.store.activity.AboutActivity"
+71-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:24:19-73
+72            android:screenOrientation="portrait" />
+72-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:25:13-49
+73
+74        <meta-data
+74-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:26:9-27:54
+75            android:name="com.facebook.sdk.ApplicationId"
+75-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:26:20-65
+76            android:value="@string/facebook_app_id" />
+76-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:27:13-52
+77
+78        <activity
+78-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:29:9-32:48
+79            android:name="com.facebook.FacebookActivity"
+79-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:29:19-63
+80            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+80-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:30:13-113
+81            android:label="@string/app_name"
+81-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:32:13-45
+82            android:theme="@style/com_facebook_activity_theme" />
+82-->[com.facebook.android:facebook-common:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c7345d43d158cf8100af403f8e0123de/jetified-facebook-common-4.42.0/AndroidManifest.xml:32:13-63
+83        <activity
+83-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:33:9-42:20
+84            android:name="com.facebook.CustomTabActivity"
+84-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:34:13-58
+85            android:exported="true" >
+85-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:35:13-36
+86            <intent-filter>
+86-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:36:13-41:29
+87                <action android:name="android.intent.action.VIEW" />
+87-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:37:17-69
+87-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:37:25-66
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:38:17-76
+89-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:38:27-73
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:39:17-78
+90-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:39:27-75
+91
+92                <data android:scheme="@string/fb_login_protocol_scheme" />
+92-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:40:17-75
+92-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:40:23-72
+93            </intent-filter>
+94        </activity>
+95        <!-- Enable only if you are want Admob support -->
+96        <meta-data
+96-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:44:9-46:53
+97            android:name="com.google.android.gms.ads.APPLICATION_ID"
+97-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:45:13-69
+98            android:value="@string/ad_mob_app_id" />
+98-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:46:13-50
+99        <meta-data
+99-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:47:9-49:55
+100            android:name="com.razorpay.ApiKey"
+100-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:48:13-47
+101            android:value="rzp_test_Y4mSmdW0LMGQn0" />
+101-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:49:13-52
+102
+103        <activity
+103-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:50:9-51:58
+104            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+104-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:50:19-82
+105            android:theme="@style/Base.Theme.AppCompat" />
+105-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:51:13-56
+106        <activity
+106-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:52:9-61:20
+107            android:name="com.vishal.store.activity.SplashActivity"
+107-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:53:13-68
+108            android:screenOrientation="portrait" >
+108-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:54:13-49
+109            <intent-filter>
+109-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:55:13-60:29
+110                <action android:name="android.intent.action.MAIN" />
+110-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:56:17-69
+110-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:56:25-66
+111                <action android:name="android.intent.action.VIEW" />
+111-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:37:17-69
+111-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:37:25-66
+112
+113                <category android:name="android.intent.category.LAUNCHER" />
+113-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:59:17-77
+113-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:59:27-74
+114            </intent-filter>
+115        </activity>
+116        <activity
+116-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:62:9-64:52
+117            android:name="com.vishal.store.activity.SubCategoryActivity"
+117-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:63:13-73
+118            android:screenOrientation="portrait" />
+118-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:64:13-49
+119        <activity android:name="com.vishal.store.AppBaseActivity" />
+119-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:65:9-69
+119-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:65:19-66
+120        <activity
+120-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:66:9-69:67
+121            android:name="com.vishal.store.activity.SignInUpActivity"
+121-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:67:13-70
+122            android:screenOrientation="portrait"
+122-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:68:13-49
+123            android:windowSoftInputMode="stateHidden|adjustPan" />
+123-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:69:13-64
+124        <activity
+124-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:70:9-72:58
+125            android:name="com.vishal.store.activity.OTPActivity"
+125-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:71:13-65
+126            android:windowSoftInputMode="stateVisible" />
+126-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:72:13-55
+127        <activity
+127-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:73:9-75:52
+128            android:name="com.vishal.store.activity.WalkThroughActivity"
+128-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:74:13-73
+129            android:screenOrientation="portrait" />
+129-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:75:13-49
+130        <activity
+130-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:76:9-79:55
+131            android:name="com.vishal.store.activity.DashBoardActivity"
+131-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:77:13-71
+132            android:screenOrientation="portrait"
+132-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:78:13-49
+133            android:windowSoftInputMode="adjustPan" />
+133-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:79:13-52
+134        <activity
+134-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:80:9-82:52
+135            android:name="com.vishal.store.activity.OrderDescriptionActivity"
+135-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:81:13-78
+136            android:screenOrientation="portrait" />
+136-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:82:13-49
+137        <activity
+137-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:83:9-85:52
+138            android:name="com.vishal.store.activity.OrderActivity"
+138-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:84:13-67
+139            android:screenOrientation="portrait" />
+139-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:85:13-49
+140        <activity
+140-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:86:9-89:51
+141            android:name="com.vishal.store.activity.ProductDetailActivity"
+141-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:87:13-75
+142            android:screenOrientation="portrait"
+142-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:89:13-49
+143            android:theme="@style/CollapsingTheme" />
+143-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:88:13-51
+144        <activity
+144-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:90:9-92:52
+145            android:name="com.vishal.store.activity.BlogActivity"
+145-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:91:13-66
+146            android:screenOrientation="portrait" />
+146-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:92:13-49
+147        <activity
+147-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:93:9-95:52
+148            android:name="com.vishal.store.activity.AddAddressActivity"
+148-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:94:13-72
+149            android:screenOrientation="portrait" />
+149-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:95:13-49
+150        <activity
+150-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:96:9-98:52
+151            android:name="com.vishal.store.activity.OrderSummaryActivity"
+151-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:97:13-74
+152            android:screenOrientation="portrait" />
+152-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:98:13-49
+153        <activity
+153-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:99:9-101:52
+154            android:name="com.vishal.store.activity.TrackItemActivity"
+154-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:100:13-71
+155            android:screenOrientation="portrait" />
+155-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:101:13-49
+156        <activity
+156-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:102:9-104:52
+157            android:name="com.vishal.store.activity.PaymentActivity"
+157-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:103:13-69
+158            android:screenOrientation="portrait" />
+158-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:104:13-49
+159        <activity
+159-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:105:9-108:57
+160            android:name="com.vishal.store.activity.AccountActivity"
+160-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:106:13-69
+161            android:screenOrientation="portrait"
+161-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:107:13-49
+162            android:windowSoftInputMode="stateHidden" />
+162-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:108:13-54
+163        <activity
+163-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:109:9-111:52
+164            android:name="com.vishal.store.activity.MyCartActivity"
+164-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:110:13-68
+165            android:screenOrientation="portrait" />
+165-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:111:13-49
+166        <activity
+166-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:112:9-114:52
+167            android:name="com.vishal.store.activity.SearchActivity"
+167-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:113:13-68
+168            android:screenOrientation="portrait" />
+168-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:114:13-49
+169        <activity
+169-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:115:9-117:52
+170            android:name="com.vishal.store.activity.ViewAllProductActivity"
+170-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:116:13-76
+171            android:screenOrientation="portrait" />
+171-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:117:13-49
+172        <activity
+172-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:118:9-120:52
+173            android:name="com.vishal.store.activity.RewardActivity"
+173-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:119:13-52
+174            android:screenOrientation="portrait" />
+174-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:120:13-49
+175        <activity
+175-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:121:9-123:52
+176            android:name="com.vishal.store.activity.AddressManagerActivity"
+176-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:122:13-76
+177            android:screenOrientation="portrait" />
+177-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:123:13-49
+178        <activity
+178-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:124:9-127:57
+179            android:name="com.vishal.store.activity.EditProfileActivity"
+179-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:125:13-73
+180            android:screenOrientation="portrait"
+180-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:126:13-49
+181            android:windowSoftInputMode="stateHidden" />
+181-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:127:13-54
+182        <activity
+182-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:128:9-130:52
+183            android:name="com.vishal.store.activity.EmailActivity"
+183-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:129:13-67
+184            android:screenOrientation="portrait" />
+184-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:130:13-49
+185        <activity
+185-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:131:9-133:52
+186            android:name="com.vishal.store.activity.ContactUsActivity"
+186-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:132:13-71
+187            android:screenOrientation="portrait" />
+187-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:133:13-49
+188        <activity
+188-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:134:9-136:52
+189            android:name="com.vishal.store.activity.FAQActivity"
+189-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:135:13-65
+190            android:screenOrientation="portrait" />
+190-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:136:13-49
+191        <activity
+191-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:137:9-139:52
+192            android:name="com.vishal.store.activity.SettingActivity"
+192-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:138:13-69
+193            android:screenOrientation="portrait" />
+193-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:139:13-49
+194        <activity
+194-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:140:9-142:52
+195            android:name="com.vishal.store.activity.CardActivity"
+195-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:141:13-66
+196            android:screenOrientation="portrait" />
+196-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:142:13-49
+197        <activity
+197-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:143:9-145:52
+198            android:name="com.vishal.store.activity.HelpActivity"
+198-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:144:13-66
+199            android:screenOrientation="portrait" />
+199-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:145:13-49
+200        <activity
+200-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:146:9-148:52
+201            android:name="com.vishal.store.activity.OfferActivity"
+201-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:147:13-67
+202            android:screenOrientation="portrait" />
+202-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:148:13-49
+203        <activity
+203-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:149:9-150:51
+204            android:name="com.vishal.store.activity.ReviewsActivity"
+204-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:149:19-75
+205            android:screenOrientation="portrait" />
+205-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:150:13-49
+206
+207        <meta-data
+207-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:152:9-154:60
+208            android:name="firebase_crash_collection_enabled"
+208-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:153:13-61
+209            android:value="@bool/FIREBASE_CRASH_ENABLED" />
+209-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:154:13-57
+210
+211        <provider
+212            android:name="androidx.core.content.FileProvider"
+212-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:157:13-62
+213            android:authorities="com.vishal.store.provider"
+213-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:158:13-60
+214            android:exported="false"
+214-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:159:13-37
+215            android:grantUriPermissions="true" >
+215-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:160:13-47
+216            <meta-data
+216-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:161:13-163:48
+217                android:name="android.support.FILE_PROVIDER_PATHS"
+217-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:162:17-67
+218                android:resource="@xml/path" />
+218-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:163:17-45
+219        </provider>
+220
+221        <!-- Enable only if you are want Onesignal support -->
+222        <meta-data
+222-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:167:9-169:39
+223            android:name="com.onesignal.NotificationOpened.DEFAULT"
+223-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:168:13-68
+224            android:value="DISABLE" />
+224-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:169:13-36
+225
+226        <activity android:name="com.facebook.CustomTabMainActivity" />
+226-->[com.facebook.android:facebook-common:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c7345d43d158cf8100af403f8e0123de/jetified-facebook-common-4.42.0/AndroidManifest.xml:33:9-71
+226-->[com.facebook.android:facebook-common:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c7345d43d158cf8100af403f8e0123de/jetified-facebook-common-4.42.0/AndroidManifest.xml:33:19-68
+227
+228        <meta-data
+228-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:49:9-51:51
+229            android:name="onesignal_app_id"
+229-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:50:13-44
+230            android:value="33203d1b-0c1a-4445-9698-a59d1e19a2da" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+230-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:51:13-48
+231        <meta-data
+231-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:53:9-55:70
+232            android:name="onesignal_google_project_number"
+232-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:54:13-59
+233            android:value="str:REMOTE" />
+233-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:55:13-67
+234
+235        <receiver
+235-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:57:9-67:20
+236            android:name="com.onesignal.GcmBroadcastReceiver"
+236-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:58:13-62
+237            android:permission="com.google.android.c2dm.permission.SEND" >
+237-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:59:13-73
+238
+239            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+240            <intent-filter android:priority="999" >
+240-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:62:13-66:29
+240-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:62:28-50
+241                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+241-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:63:17-81
+241-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:63:25-78
+242
+243                <category android:name="com.vishal.store" />
+243-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:65:17-61
+243-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:65:27-58
+244            </intent-filter>
+245        </receiver>
+246        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+246-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:68:9-77
+246-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:68:19-74
+247
+248        <service android:name="com.onesignal.GcmIntentService" />
+248-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:70:9-66
+248-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:70:18-63
+249        <service
+249-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:71:9-73:72
+250            android:name="com.onesignal.GcmIntentJobService"
+250-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:72:13-61
+251            android:permission="android.permission.BIND_JOB_SERVICE" />
+251-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:73:13-69
+252        <service
+252-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:74:9-76:72
+253            android:name="com.onesignal.RestoreJobService"
+253-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:75:13-59
+254            android:permission="android.permission.BIND_JOB_SERVICE" />
+254-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:76:13-69
+255        <service
+255-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:77:9-79:72
+256            android:name="com.onesignal.RestoreKickoffJobService"
+256-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:78:13-66
+257            android:permission="android.permission.BIND_JOB_SERVICE" />
+257-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:79:13-69
+258        <service
+258-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:80:9-82:43
+259            android:name="com.onesignal.SyncService"
+259-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:81:13-53
+260            android:stopWithTask="true" />
+260-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:82:13-40
+261        <service
+261-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:83:9-85:72
+262            android:name="com.onesignal.SyncJobService"
+262-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:84:13-56
+263            android:permission="android.permission.BIND_JOB_SERVICE" />
+263-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:85:13-69
+264
+265        <activity
+265-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:87:9-89:75
+266            android:name="com.onesignal.PermissionsActivity"
+266-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:88:13-61
+267            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+267-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:89:13-72
+268
+269        <service android:name="com.onesignal.NotificationRestoreService" />
+269-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:91:9-76
+269-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:91:18-73
+270
+271        <receiver android:name="com.onesignal.BootUpReceiver" >
+271-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:93:9-98:20
+271-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:93:19-62
+272            <intent-filter>
+272-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:94:13-97:29
+273                <action android:name="android.intent.action.BOOT_COMPLETED" />
+273-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:95:17-79
+273-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:95:25-76
+274                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+274-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:96:17-82
+274-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:96:25-79
+275            </intent-filter>
+276        </receiver>
+277        <receiver android:name="com.onesignal.UpgradeReceiver" >
+277-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:99:9-103:20
+277-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:99:19-63
+278            <intent-filter>
+278-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:100:13-102:29
+279                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+279-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:101:17-84
+279-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:101:25-81
+280            </intent-filter>
+281        </receiver>
+282
+283        <activity
+283-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+284            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+284-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+285            android:excludeFromRecents="true"
+285-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+286            android:exported="true"
+286-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+287            android:launchMode="singleTask"
+287-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+288            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+288-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+289            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+289-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+290
+291        <service
+291-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+292            android:name="com.google.firebase.components.ComponentDiscoveryService"
+292-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+293            android:directBootAware="true"
+293-->[com.google.firebase:firebase-common:19.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/3557aa95fcdcdcb575dee2bf1d557aa6/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+294            android:exported="false" >
+294-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+295            <meta-data
+295-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+296                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+296-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+297                android:value="com.google.firebase.components.ComponentRegistrar" />
+297-->[com.google.firebase:firebase-auth:19.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d39133ccc7ad878af82cee8d371b854d/jetified-firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+298            <meta-data
+298-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+299                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+299-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+300                android:value="com.google.firebase.components.ComponentRegistrar" />
+300-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+301            <meta-data
+301-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/98f14f8ad4bc79c532f19db3ab0a2ca9/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+302                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+302-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/98f14f8ad4bc79c532f19db3ab0a2ca9/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/98f14f8ad4bc79c532f19db3ab0a2ca9/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+304            <meta-data
+304-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+305                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+305-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+306                android:value="com.google.firebase.components.ComponentRegistrar" />
+306-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+307            <meta-data
+307-->[com.google.firebase:firebase-datatransport:17.0.3] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/17929d19b424995fa455712d9b8375f4/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+308                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+308-->[com.google.firebase:firebase-datatransport:17.0.3] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/17929d19b424995fa455712d9b8375f4/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-datatransport:17.0.3] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/17929d19b424995fa455712d9b8375f4/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+310        </service>
+311        <!--
+312             FirebaseMessagingService performs security checks at runtime,
+313             but set to not exported to explicitly avoid allowing another app to call it.
+314        -->
+315        <service
+315-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+316            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+316-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+317            android:exported="false" >
+317-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+318            <intent-filter android:priority="-500" >
+318-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:31:13-33:29
+318-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:31:28-51
+319                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+319-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:32:17-78
+319-->[com.google.firebase:firebase-messaging:20.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6db82ad6d6258e29130c56ed261aab2b/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:32:25-75
+320            </intent-filter>
+321        </service>
+322
+323        <provider
+323-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bed4a56bcf017d118f348028b0c77ae2/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+324            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+324-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bed4a56bcf017d118f348028b0c77ae2/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+325            android:authorities="com.vishal.store.crashlyticsinitprovider"
+325-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bed4a56bcf017d118f348028b0c77ae2/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+326            android:exported="false"
+326-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bed4a56bcf017d118f348028b0c77ae2/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+327            android:initOrder="90" />
+327-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bed4a56bcf017d118f348028b0c77ae2/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+328
+329        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+329-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:12:9-16:20
+329-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:12:19-63
+330            <intent-filter>
+330-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:13:13-15:29
+331                <action android:name="rzp.device_token.share" />
+331-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:14:17-65
+331-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:14:25-62
+332            </intent-filter>
+333        </receiver>
+334
+335        <activity
+335-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:18:9-29:20
+336            android:name="com.razorpay.CheckoutActivity"
+336-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:19:13-57
+337            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+337-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:20:13-83
+338            android:theme="@style/CheckoutTheme" >
+338-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:21:13-49
+339            <intent-filter>
+339-->[com.razorpay:checkout:1.5.12] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/93266af40b0fc6669dc78a7aaa6959c8/jetified-checkout-1.5.12/AndroidManifest.xml:22:13-28:29
+340                <action android:name="android.intent.action.MAIN" />
+340-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:56:17-69
+340-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:56:25-66
+341
+342                <data
+342-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:40:17-75
+343                    android:host="rzp.io"
+344                    android:scheme="io.rzp" />
+344-->/home/vaibhav/Downloads/android deployment/test 1- woobox/VDS/app/src/main/AndroidManifest.xml:40:23-72
+345            </intent-filter>
+346        </activity>
+347        <activity
+347-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+348            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+348-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+349            android:excludeFromRecents="true"
+349-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+350            android:exported="false"
+350-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+351            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+351-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+352        <!--
+353            Service handling Google Sign-In user revocation. For apps that do not integrate with
+354            Google Sign-In, this service will never be started.
+355        -->
+356        <service
+356-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+357            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+357-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+358            android:exported="true"
+358-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+359            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+359-->[com.google.android.gms:play-services-auth:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/0b6e7289e70de232527f4ab0c76dd0c9/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+360
+361        <receiver
+361-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+362            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+362-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+363            android:exported="true"
+363-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+364            android:permission="com.google.android.c2dm.permission.SEND" >
+364-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+365            <intent-filter>
+365-->[com.google.firebase:firebase-iid:20.0.2] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/c6d8496b3b05f531c7cf9a3404dba003/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+366                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+366-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:63:17-81
+366-->[com.onesignal:OneSignal:3.11.4] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/6e273597d36319064f3e68c17fae7c1b/jetified-OneSignal-3.11.4/AndroidManifest.xml:63:25-78
+367            </intent-filter>
+368        </receiver>
+369
+370        <activity
+370-->[com.google.android.gms:play-services-base:17.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/020413751313ef66fb059f7b3f0bdbdf/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+371            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+371-->[com.google.android.gms:play-services-base:17.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/020413751313ef66fb059f7b3f0bdbdf/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+372            android:exported="false"
+372-->[com.google.android.gms:play-services-base:17.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/020413751313ef66fb059f7b3f0bdbdf/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+373            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+373-->[com.google.android.gms:play-services-base:17.1.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/020413751313ef66fb059f7b3f0bdbdf/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+374
+375        <provider
+375-->[com.google.firebase:firebase-common:19.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/3557aa95fcdcdcb575dee2bf1d557aa6/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+376            android:name="com.google.firebase.provider.FirebaseInitProvider"
+376-->[com.google.firebase:firebase-common:19.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/3557aa95fcdcdcb575dee2bf1d557aa6/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+377            android:authorities="com.vishal.store.firebaseinitprovider"
+377-->[com.google.firebase:firebase-common:19.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/3557aa95fcdcdcb575dee2bf1d557aa6/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+378            android:exported="false"
+378-->[com.google.firebase:firebase-common:19.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/3557aa95fcdcdcb575dee2bf1d557aa6/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+379            android:initOrder="100" />
+379-->[com.google.firebase:firebase-common:19.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/3557aa95fcdcdcb575dee2bf1d557aa6/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+380
+381        <receiver
+381-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+382            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+382-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+383            android:enabled="true"
+383-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+384            android:exported="false" >
+384-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+385        </receiver>
+386        <receiver
+386-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+387            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+387-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+388            android:enabled="true"
+388-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+389            android:exported="true"
+389-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+390            android:permission="android.permission.INSTALL_PACKAGES" >
+390-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+391            <intent-filter>
+391-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+392                <action android:name="com.android.vending.INSTALL_REFERRER" />
+392-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+392-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+393            </intent-filter>
+394        </receiver>
+395
+396        <service
+396-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+397            android:name="com.google.android.gms.measurement.AppMeasurementService"
+397-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+398            android:enabled="true"
+398-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+399            android:exported="false" />
+399-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+400        <service
+400-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+401            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+401-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+402            android:enabled="true"
+402-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+403            android:exported="false"
+403-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+404            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+404-->[com.google.android.gms:play-services-measurement:17.2.1] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7dac5790751b4fddb574817584f4a32f/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+405        <activity
+405-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:29:9-33:64
+406            android:name="com.google.android.gms.ads.AdActivity"
+406-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:30:13-65
+407            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+407-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:31:13-122
+408            android:exported="false"
+408-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:32:13-37
+409            android:theme="@android:style/Theme.Translucent" />
+409-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:33:13-61
+410
+411        <provider
+411-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:35:9-39:39
+412            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+412-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:36:13-76
+413            android:authorities="com.vishal.store.mobileadsinitprovider"
+413-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:37:13-73
+414            android:exported="false"
+414-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:38:13-37
+415            android:initOrder="100" />
+415-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/237a43eaaa635046d6ec19613760d8af/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:39:13-36
+416
+417        <meta-data
+417-->[com.google.android.gms:play-services-basement:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d1c966c2eda59ff2de5a94416eda0bd7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+418            android:name="com.google.android.gms.version"
+418-->[com.google.android.gms:play-services-basement:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d1c966c2eda59ff2de5a94416eda0bd7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+419            android:value="@integer/google_play_services_version" />
+419-->[com.google.android.gms:play-services-basement:17.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d1c966c2eda59ff2de5a94416eda0bd7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+420        <!--
+421         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+422         with the application context. This config is merged in with the host app's manifest,
+423         but there can only be one provider with the same authority activated at any given
+424         point; so if the end user has two or more different apps that use Facebook SDK, only the
+425         first one will be able to use the provider. To work around this problem, we use the
+426         following placeholder in the authority to identify each host application as if it was
+427         a completely different provider.
+428        -->
+429        <provider
+429-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:39:9-42:40
+430            android:name="com.facebook.internal.FacebookInitProvider"
+430-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:40:13-70
+431            android:authorities="com.vishal.store.FacebookInitProvider"
+431-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:41:13-72
+432            android:exported="false" />
+432-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:42:13-37
+433
+434        <receiver
+434-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:44:9-50:20
+435            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+435-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:45:13-86
+436            android:exported="false" >
+436-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:46:13-37
+437            <intent-filter>
+437-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:47:13-49:29
+438                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+438-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:48:17-95
+438-->[com.facebook.android:facebook-core:4.42.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2c33fcce41cb03e86e1c70d7912a20fb/jetified-facebook-core-4.42.0/AndroidManifest.xml:48:25-92
+439            </intent-filter>
+440        </receiver>
+441
+442        <service
+442-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2570e5777e9b56f30d7018eefd0932a9/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+443            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+443-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2570e5777e9b56f30d7018eefd0932a9/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+444            android:exported="false" >
+444-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2570e5777e9b56f30d7018eefd0932a9/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+445            <meta-data
+445-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2570e5777e9b56f30d7018eefd0932a9/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+446                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+446-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2570e5777e9b56f30d7018eefd0932a9/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+447                android:value="cct" />
+447-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2570e5777e9b56f30d7018eefd0932a9/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+448        </service>
+449        <service
+449-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+450            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+450-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+451            android:exported="false"
+451-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+452            android:permission="android.permission.BIND_JOB_SERVICE" >
+452-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+453        </service>
+454
+455        <receiver
+455-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+456            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+456-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+457            android:exported="false" />
+457-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/edcf578841dc26eaa9f310e9687aa0a3/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+458    </application>
+459
+460</manifest>
